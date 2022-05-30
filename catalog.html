@@ -69,17 +69,17 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="Бассейн">Бассейн
+                <input class="control-input" name="infrastructure" type="checkbox" value="Бассейн">Бассейн
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="Парковка">Парковка
+                <input class="control-input" name="infrastructure" type="checkbox" value="Парковка">Парковка
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
+                <input class="control-input" name="infrastructure" type="checkbox" value="Wi-Fi">Wi-Fi
               </label>
             </li>
           </ul>
@@ -90,17 +90,17 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="Гостиница">Гостиница
+                <input class="control-input" name="hoteltype" type="radio" name="Гостиница">Гостиница
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="Мотель">Мотель
+                <input class="control-input" name="hoteltype" type="radio" name="Мотель">Мотель
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="Апартаменты">Апартаменты
+                <input class="control-input" name="hoteltype" type="radio" name="Апартаменты">Апартаменты
               </label>
             </li>
           </ul>
@@ -111,7 +111,7 @@
         </fieldset>
 
         <button class="button" type="submit">Применить</button>
-        <button class="button" type="submit">Сбросить</button>
+        <button class="button" type="reset">Сбросить</button>
       </form>
       <h2 class="select-title">Найдено гостиниц: 38</h2>
       <select class="select-control" aria-label="Сортировка">
@@ -119,51 +119,62 @@
         <option value="cheap">Сначала дешевле</option>
         <option value="expensive">Сначала дороже</option>
       </select>
-      <a href="#" class="button button-light">
-        <span class="visually-hidden">Показать галерею</span>
-      </a>
-      <a href="#" class="button button-light">
-        <span class="visually-hidden">Показать список</span>
-      </a>
-      <a class="button" href="#">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
+      <ul>
+        <li>
+          <a href="#" class="button button-light"><span class="visually-hidden">Показать галерею</span></a>
+        </li>
+        <li>
+          <a href="#" class="button button-light"><span class="visually-hidden">Показать список</span></a>
+        </li>
+        <li>
+          <a class="button" href="#"><span class="visually-hidden">Показать карточки</span></a>
+        </li>
+      </ul>
+
       <ul class="hotel-list">
         <li class="hotel-card">
           <img class="hotel-card-img" src="" alt="Amara Resort & Spa">
           <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-          <b class="hotel-description">Гостиница</b>
-          <b class="hotel-price">От 4000 ₽</b>
+          <dl>
+            <dt class="hotel-description">Гостиница</dt>
+            <dd class="hotel-price">От 4000 ₽</dd>
+          </dl>
           <a class="hotel-detail" href="#">подробнее</a>
           <button class="select-button">в избранное</button>
-          <b class="hotel-rating">Рейтинг: 8,5</b>
+          <span class="hotel-rating">Рейтинг: 8,5</span>
         </li>
         <li class="hotel-card">
           <img class="hotel-card-img" src="" alt="Villas at Poco Diablo">
           <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-          <b class="hotel-description">Гостиница</b>
-          <b class="hotel-price">От 5000 ₽</b>
+          <dl>
+            <dt class="hotel-description">Гостиница</dt>
+            <dd class="hotel-price">От 5000 ₽</dd>
+          </dl>
           <a class="hotel-detail" href="#">подробнее</a>
           <button class="select-button">в избранном</button>
-          <b class="hotel-rating">Рейтинг: 9,2</b>
+          <span class="hotel-rating">Рейтинг: 9,2</span>
         </li>
         <li class="hotel-card">
           <img class="hotel-card-img" src="" alt="Desert Quail Inn">
           <h3 class="hotel-card-title">Desert Quail Inn</h3>
-          <b class="hotel-description">Гостиница</b>
-          <b class="hotel-price">От 2500 ₽</b>
+          <dl>
+            <dt class="hotel-description">Гостиница</dt>
+            <dd class="hotel-price">От 2500 ₽</dd>
+          </dl>
           <a class="hotel-detail" href="#">подробнее</a>
           <button class="select-button">в избранное</button>
-          <b class="hotel-rating">Рейтинг: 6,9</b>
+          <span class="hotel-rating">Рейтинг: 6,9</span>
         </li>
         <li class="hotel-card">
           <img class="hotel-card-img" src="" alt="GreenTree Inn">
           <h3 class="hotel-card-title">GreenTree Inn</h3>
-          <b class="hotel-description">Гостиница</b>
-          <b class="hotel-price">От 1500 ₽</b>
+          <dl>
+            <dt class="hotel-description">Гостиница</dt>
+            <dd class="hotel-price">От 1500 ₽</dd>
+          </dl>
           <a class="hotel-detail" href="#">подробнее</a>
           <button class="select-button">в избранное</button>
-          <b class="hotel-rating">Рейтинг: 5,0</b>
+          <span class="hotel-rating">Рейтинг: 5,0</span>
         </li>
       </ul>
 
@@ -196,7 +207,11 @@
       </ul>
 
       <label>Гостиниц на странице:
-        <input type="number" min="4" max="12">
+        <select class="hotel-quantity">
+          <option value="4">4</option>
+          <option value="8">8</option>
+          <option value="12">12</option>
+        </select>
       </label>
     </section>
 
