@@ -30,16 +30,14 @@
         <li class="user-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">Поиск</span>
-            <img src="images/search.svg" alt="Поиск" width="18" height="18">
           </a>
         </li>
         <li class="user-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">Избранное</span>
-            <img src="images/favorite.svg" alt="Избранное" width="18" height="17">
           </a>
         </li>
-        <li class="user-item">
+        <li class="user-item header-button">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">Хочу сюда</span>
           </a>
@@ -51,10 +49,12 @@
   </header>
 
   <main class="main-index">
-    <img class="main-img" src="images/welcome.svg" alt="логотип Седоны" width="1200" height="767">
-    <h1 class="main-title visually-hidden">Седона — небольшой городок в Аризоне,
+    <div class="main-index-header">
+      <img class="main-img" src="images/welcome.svg" alt="логотип Седоны" width="458" height="352">
+    </div>
+    <h1 class="main-title">Седона — небольшой городок в Аризоне,
       заслуживающий большего!</h1>
-    <h2 class="advantages visually-hidden">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h2>
+    <h2 class="advantages">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h2>
 
     <ol class="advantages-list">
       <li class="advantages-item">
@@ -116,7 +116,10 @@
       <h2 class="order-title">Заинтересовались?</h2>
       <p class="order-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         Седоне</p>
-      <a class="order-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+      <div class="order-button-wrapper">
+        <a class="order-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+      </div>
+
     </section>
 
     <section class="sign">
