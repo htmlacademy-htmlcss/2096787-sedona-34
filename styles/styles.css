@@ -16,11 +16,11 @@
 
 body {
     font-family: "PT Sans", sans-serif;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 22px;
+    line-height: 26px;
     font-weight: 400;
     background-color: #fbf7f4;
-    color: black;
+    color: #000000;
 }
 
 .header-index {
@@ -41,14 +41,13 @@ body {
 
 .header-button {
     width: 160px;
-    height: 37px;
     background-color: #756157;
     border-radius: 4px;
 }
 
 .main-index-header {
     background-image: url(../images/index-background.jpg);
-    background-color: blue;
+    background-color: #4682B4;
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 485px;
@@ -65,8 +64,6 @@ body {
 
 .advantages {
     font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
     text-align: center;
     color: #333333;
 }
@@ -119,11 +116,10 @@ body {
 }
 
 .sign {
-    height: 411px;
     background-image: url(../images/background-sign.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-color: blue;
+    background-color: #4682B4;
     color: #FFFFFF;
 }
 
@@ -137,22 +133,18 @@ body {
 
 .sign-description {
     font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
     text-align: center;
     color: #FFFFFF;
 }
 
 .sign-field {
     width: 600px;
-    height: 60px;
     background: #F2F2F2;
     border-radius: 10px 0px 0px 10px;
 }
 
 .sign-button {
     width: 200px;
-    height: 60px;
     background-color: #82B3D3;
     border-radius: 0px 10px 10px 0px;
     font-weight: 700;
@@ -180,7 +172,7 @@ body {
 .main-top {
     background-image: url(../images/background-catalog.png);
     background-size: cover;
-    background-color: blue;
+    background-color: #4682B4;
     color: #FFFFFF;
     background-repeat: no-repeat;
 
@@ -211,9 +203,15 @@ body {
     text-transform: capitalize;
 }
 
+.control-input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
 .button-submit {
     width: 160px;
-    height: 48px;
     background-color: #82B3D3;
     border-radius: 4px;
     font-weight: 700;
@@ -234,6 +232,8 @@ body {
     background-color: transparent;
 }
 
+
+
 .select-title {
     font-weight: 700;
     font-size: 30px;
@@ -242,6 +242,14 @@ body {
     color: #000000;
 }
 
+.select-control-option {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+
 .hotel-card-title {
     font-weight: 700;
     font-size: 24px;
@@ -249,13 +257,16 @@ body {
     color: #000000;
 }
 
+
 .price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
     color: #333333;
 }
 
 .hotel-detail {
     width: 140px;
-    height: 37px;
     background: #756157;
     border-radius: 4px;
 }
@@ -271,7 +282,6 @@ body {
 
 .select-button {
     width: 140px;
-    height: 37px;
     background-color: #82B3D3;
     border-radius: 4px;
     font-weight: 700;
@@ -282,14 +292,12 @@ body {
     color: #FFFFFF;
 }
 
-.select-button:nth-child(2) {
-    /*почему он не окрашивается????*/
+/* .select-button:nth-child(2) {
     background-color: #7DB54F;
-}
+} */
 
 .hotel-rating {
     width: 140px;
-    height: 37px;
     background-color: #F2F2F2;
     border-radius: 4px;
 }
