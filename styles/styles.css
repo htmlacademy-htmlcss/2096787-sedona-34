@@ -54,7 +54,6 @@ body {
 }
 
 .main-title {
-    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
@@ -73,14 +72,12 @@ body {
 
 .advantages-item-title,
 .services-item-title {
-    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
 }
 
 .order-title {
-    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
@@ -122,7 +119,6 @@ body {
 }
 
 .sign-title {
-    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
@@ -179,7 +175,6 @@ body {
 }
 
 .main-header-titel {
-    font-weight: 700;
     font-size: 60px;
     line-height: 78px;
 }
@@ -196,7 +191,6 @@ body {
 }
 
 .catalog-filter-title {
-    font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     text-transform: capitalize;
@@ -232,7 +226,6 @@ body {
 
 
 .select-title {
-    font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
@@ -247,7 +240,6 @@ body {
 
 
 .hotel-card-title {
-    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     color: #000000;
@@ -286,10 +278,6 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
-/* .select-button:nth-child(2) {
-    background-color: #7DB54F;
-} */
 
 .hotel-rating {
     width: 140px;
