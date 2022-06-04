@@ -63,7 +63,6 @@ body {
 }
 
 .advantages {
-    font-weight: 400;
     text-align: center;
     color: #333333;
 }
@@ -90,7 +89,6 @@ body {
 }
 
 .order-description {
-    font-weight: 400;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
@@ -132,9 +130,12 @@ body {
 }
 
 .sign-description {
-    font-weight: 400;
     text-align: center;
     color: #FFFFFF;
+}
+
+.sign-form {
+    font-family: inherit;
 }
 
 .sign-field {
@@ -158,7 +159,6 @@ body {
 /*footer*/
 
 .contact-number {
-    font-weight: 400;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
@@ -185,7 +185,6 @@ body {
 }
 
 .breadcrubs-item {
-    font-weight: 400;
     font-size: 16px;
     line-height: 21px;
 
@@ -204,7 +203,6 @@ body {
 }
 
 .control-input {
-    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
@@ -223,7 +221,6 @@ body {
 }
 
 .button-reset {
-    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     border: none;
@@ -243,7 +240,6 @@ body {
 }
 
 .select-control-option {
-    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
@@ -259,7 +255,6 @@ body {
 
 
 .price {
-    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
@@ -303,7 +298,6 @@ body {
 }
 
 .hotel-rating span {
-    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
