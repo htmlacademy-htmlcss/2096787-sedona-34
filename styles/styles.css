@@ -20,8 +20,6 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -34,11 +32,16 @@ img {
   display: block;
 }
 
-/*можно так для всех картинок на сайте задавать?*/
-
 .container {
   margin: 0 auto;
   width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-container {
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .header-index {
@@ -51,8 +54,6 @@ img {
 
 .navigation {
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
 }
 
 .navigation-logo {
@@ -187,6 +188,7 @@ img {
 .sign-form {
   font-family: inherit;
   margin: 0 auto;
+  /* почему он не центрируется?  */
 }
 
 .sign-field {
@@ -212,8 +214,6 @@ img {
 
 .footer-container {
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
 }
 
 .social-list-container {
@@ -247,10 +247,6 @@ img {
   background-repeat: no-repeat;
 }
 
-.main-header {
-  width: 1060px;
-  margin: 0 auto;
-}
 
 .main-header-titel {
   font-size: 60px;
@@ -267,10 +263,6 @@ img {
   color: #ffffff;
 }
 
-.catalog-hotels {
-  width: 1060px;
-  margin: 0 auto;
-}
 .catalog-filter {
   display: flex;
 }
@@ -318,8 +310,6 @@ img {
 
 .select-container {
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
 }
 
 .select-title {
@@ -340,12 +330,10 @@ img {
 }
 
 .hotel-list {
-  width: 1060px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin: 0 auto;
   justify-content: space-between;
 }
 
@@ -354,10 +342,18 @@ img {
   padding: 0;
 }
 
+.hotel-card-wrapper {
+  padding: 0 20px;
+}
+
 .hotel-card-title {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+}
+
+.hotel-card-img {
+  width: 100%;
 }
 
 .price {
@@ -409,6 +405,11 @@ img {
   line-height: 20px;
   text-transform: uppercase;
   color: #333333;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
 }
 
 .sign-catalog {
