@@ -22,6 +22,7 @@ body {
   margin: 0;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   background-color: #fbf7f4;
@@ -43,6 +44,7 @@ img {
   width: 1060px;
   margin: 0 auto;
   border: red 1px solid;
+  /*временная рамка, чтоб видеть контейнер*/
 }
 
 .header-index {
@@ -75,7 +77,6 @@ img {
 }
 
 .navigation-link {
-  text-align: center;
   text-decoration: none;
   text-transform: capitalize;
   color: #000000;
@@ -196,6 +197,7 @@ img {
   width: 600px;
   background: #f2f2f2;
   border-radius: 10px 0px 0px 10px;
+  /*почему мне конфиг пишет ошибку? можно как-то по-другому задать бордер-радиус с одной стороны только?*/
 }
 
 .sign-button {
@@ -337,17 +339,18 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-
-
 }
 
 .hotel-card {
   width: 340px;
   padding: 20px;
-  border: #000000 1px solid;
+  margin-right: 18px;
+  box-sizing: border-box;
 }
 
-
+.hotel-card:nth-child(3n) {
+  margin-right: 0;
+}
 
 .hotel-card-title {
   font-size: 24px;
@@ -356,7 +359,8 @@ img {
 }
 
 .hotel-card-img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .price {
