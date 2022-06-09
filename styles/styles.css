@@ -66,14 +66,14 @@ img {
 .navigation-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   width: 480px;
 }
 
 .navigation-user {
   width: 270px;
   margin-left: auto;
-  list-style: none;
+  list-style-type: none;
 }
 
 .navigation-link {
@@ -333,7 +333,7 @@ img {
 }
 
 .hotels-list {
-  list-style: none;
+  list-style-typee: none;
   margin: 0;
   padding: 0;
   display: flex;
