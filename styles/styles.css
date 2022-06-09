@@ -42,6 +42,7 @@ img {
 .inner-container {
   width: 1060px;
   margin: 0 auto;
+  border: red 1px solid;
 }
 
 .header-index {
@@ -329,22 +330,24 @@ img {
   color: #333333;
 }
 
-.hotel-list {
+.hotels-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  justify-content: space-between;
+  justify-content: flex-start;
+
+
 }
 
 .hotel-card {
   width: 340px;
-  padding: 0;
+  padding: 20px;
+  border: #000000 1px solid;
 }
 
-.hotel-card-wrapper {
-  padding: 0 20px;
-}
+
 
 .hotel-card-title {
   font-size: 24px;
