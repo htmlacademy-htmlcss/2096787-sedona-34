@@ -31,6 +31,7 @@ body {
 
 img {
   display: block;
+  /*можно так оставить, чтоб для всех картинок было?*/
 }
 
 .container {
@@ -333,7 +334,7 @@ img {
 }
 
 .hotels-list {
-  list-style-typee: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
