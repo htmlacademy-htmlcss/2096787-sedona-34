@@ -39,6 +39,8 @@ img {
   width: 1200px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  /*почему не работает липктй футер?*/
 }
 
 .inner-container {
@@ -88,10 +90,6 @@ img {
   width: 160px;
   background-color: #756157;
   border-radius: 4px;
-}
-
-.main-container {
-  flex-grow: 1;
 }
 
 .main-index-header {
