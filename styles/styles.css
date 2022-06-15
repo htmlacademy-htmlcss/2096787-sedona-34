@@ -50,6 +50,17 @@ img {
   /*временная рамка, чтоб видеть контейнер*/
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header-index {
   background-color: #FFFFFF;;
   font-weight: 700;
@@ -62,15 +73,14 @@ img {
   display: flex;
 }
 
-.navigation-logo {
-  margin-right: 47px;
-}
-
 .navigation-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
   width: 480px;
+  display: flex;
+  margin-left: 30px;
+  flex-wrap: wrap;
 }
 
 .navigation-user {
@@ -84,12 +94,30 @@ img {
   text-transform: capitalize;
   color: #000000;
   text-align: center;
+  display: block;
+  padding: 20px 34px;
+}
+
+.user-item {
+  min-width: 42px;
+  min-height: 66px;
+  border: red 1px solid;
+}
+
+.user-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000000;
+  text-align: center;
+  display: block;
+  padding: 9px 15px;
 }
 
 .header-button {
   width: 160px;
   background-color: #756157;
   border-radius: 4px;
+  margin-left: auto;
 }
 
 .main-index-header {
