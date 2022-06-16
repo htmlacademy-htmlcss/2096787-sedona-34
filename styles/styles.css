@@ -106,23 +106,23 @@ img {
   border: red 1px solid;
 }
 
-.user-link {
+.user-button {
+  background-color: #756157;
   text-decoration: none;
   text-transform: capitalize;
   color: #000000;
   text-align: center;
   display: block;
   padding: 9px 15px;
+  align-self: center;
 }
 
 .header-button {
   width: 160px;
-  background-color: #756157;
   border-radius: 4px;
   margin-left: auto;
+  padding-top: 14px;
 }
-
-
 
 .main-index-header {
   background-image: url(../images/index-background.jpg);
@@ -197,8 +197,6 @@ img {
   margin: 0;
   margin-top: 29px;
   margin-bottom: 56px;
-
-
 }
 
 .order-button {
