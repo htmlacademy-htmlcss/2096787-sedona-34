@@ -25,7 +25,8 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  background-color: #FFFFFF;;
+  background-color: #FFFFFF;
+  ;
   color: #000000;
 }
 
@@ -62,7 +63,8 @@ img {
 }
 
 .header-index {
-  background-color: #FFFFFF;;
+  background-color: #FFFFFF;
+  ;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -120,6 +122,8 @@ img {
   margin-left: auto;
 }
 
+
+
 .main-index-header {
   background-image: url(../images/index-background.jpg);
   background-color: #4682b4;
@@ -134,15 +138,23 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  padding-top: 63px;
+  margin-top: 0;
+  margin-bottom: 31px;
 }
 
 .main-img {
   margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .advantages {
+  font-weight: normal;
+  margin: 0;
   text-align: center;
   color: #333333;
+  margin-bottom: 90px;
 }
 
 .advantages-item {
@@ -154,6 +166,13 @@ img {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 92px;
+  margin-bottom: 30px;
+}
+
+.advantages-item-number {
+  margin-bottom: 30px;
 }
 
 .order {
@@ -166,6 +185,8 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-top: 91px;
 }
 
 .order-description {
@@ -173,6 +194,11 @@ img {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin: 0;
+  margin-top: 29px;
+  margin-bottom: 56px;
+
+
 }
 
 .order-button {
@@ -183,15 +209,18 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+  display: block;
+  background: #756157;
+  padding: 12px 15px;
 }
 
 .order-button-wrapper {
   width: 544px;
   text-align: center;
   height: 36px;
-  background: #756157;
   border-radius: 4px;
   margin: 0 auto;
+  margin-bottom: 93px;
 }
 
 .sign {
@@ -207,16 +236,24 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  padding-top: 94px;
 }
 
 .sign-description {
   text-align: center;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
+  padding-top: 29px;
+  padding-bottom: 46px;
 }
 
 .sign-form {
   font-family: inherit;
   margin: 0 auto;
+  padding: 0;
+  padding-bottom: 94px;
   /* почему он не центрируется?  */
 }
 
@@ -225,6 +262,9 @@ img {
   background: #f2f2f2;
   border-radius: 10px 0px 0px 10px;
   /*почему мне конфиг пишет ошибку? можно как-то по-другому задать бордер-радиус с одной стороны только?*/
+  padding-left: 22px;
+  padding-top: 20px;
+  padding-bottom: 19px;
 }
 
 .sign-button {
@@ -238,12 +278,15 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+  padding: 12px 15px;
 }
 
 /*footer*/
 
 .footer-container {
   display: flex;
+  padding-top: 45px;
+  padding-bottom: 35px;
 }
 
 .social-list-container {
