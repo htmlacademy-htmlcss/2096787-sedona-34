@@ -25,7 +25,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  background-color: #FFFFFF;
+  background-color: #e5e5e5; н
   color: #000000;
 }
 
@@ -39,6 +39,7 @@ img {
   width: 1200px;
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
 }
 
 .main-index,
@@ -65,7 +66,7 @@ img {
 }
 
 .header-index {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
