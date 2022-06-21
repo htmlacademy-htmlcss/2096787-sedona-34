@@ -25,8 +25,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  background-color: #FFFFFF;
-  ;
+  background-color: #e5e5e5; н
   color: #000000;
 }
 
@@ -40,8 +39,12 @@ img {
   width: 1200px;
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
+}
+
+.main-index,
+.main-container {
   flex-grow: 1;
-  /*почему не работает липктй футер?*/
 }
 
 .inner-container {
@@ -63,8 +66,7 @@ img {
 }
 
 .header-index {
-  background-color: #FFFFFF;
-  ;
+  background-color: #ffffff;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -151,6 +153,7 @@ img {
 
 .advantages {
   font-weight: normal;
+  font-size: inherit;
   margin: 0;
   text-align: center;
   color: #333333;
@@ -256,18 +259,19 @@ img {
 }
 
 .sign-form {
+  width: 600px;
   font-family: inherit;
   margin: 0 auto;
   padding: 0;
   padding-bottom: 94px;
-  /* почему он не центрируется?  */
+  display: flex;
 }
 
 .sign-field {
   width: 600px;
-  background: #f2f2f2;
-  border-radius: 10px 0px 0px 10px;
-  /*почему мне конфиг пишет ошибку? можно как-то по-другому задать бордер-радиус с одной стороны только?*/
+  background-color: #f2f2f2;
+  border: #f2f2f2 1px solid;
+  border-radius: 10px 0 0 10px;
   padding-left: 22px;
   padding-top: 20px;
   padding-bottom: 19px;
@@ -276,7 +280,8 @@ img {
 .sign-button {
   width: 200px;
   background-color: #82b3d3;
-  border-radius: 0px 10px 10px 0px;
+  border: #82b3d3 1px solid;
+  border-radius: 0 10px 10px 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -298,9 +303,9 @@ img {
 .social-list-container {
   display: flex;
   flex-wrap: wrap;
-  width: 140px;
-  justify-content: space-between;
+  width: 188px;
   list-style: none;
+  padding: 0;
 }
 
 .social-list-item {
@@ -334,20 +339,18 @@ img {
 }
 
 
-.main-header-titel {
+.main-header-title {
   font-size: 60px;
   line-height: 78px;
-  margin: 0;
-  margin-top: 35px;
-  margin-bottom: 10px;
+  margin: 35px 0 10px;
 }
+
 
 .breadcrubs {
   display: flex;
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 40px;
   padding: 0;
-  margin-bottom: 40px;
 }
 
 .link-index {
@@ -428,12 +431,8 @@ img {
 
 .select-control {
   width: 290px;
-  margin-left: auto;
-  margin-top: 50px;
-  margin-bottom: 56px;
-  margin-right: 78px;
+  margin: 50px 78px 56px auto;
   padding: 14px 20px;
-
 }
 
 .select-control-option {
@@ -503,7 +502,7 @@ img {
 
 .hotel-detail {
   width: 140px;
-  background: #756157;
+  background-color: #756157;
   border-radius: 4px;
 }
 
@@ -562,12 +561,12 @@ img {
 .pagination-item {
   border: 1px solid #82B3D3;
   border-radius: 4px;
-  background: #82B3D3;
+  background-color: #82B3D3;
 }
 
 .pagination-item:first-child {
-  background: #f2f2f2;
-  border: 1px solid ##f2f2f2;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 
 .pagination-item:not(:last-child) {
@@ -602,7 +601,19 @@ img {
   background-color: #ffffff;
 }
 
+.sign-catalog-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  padding-top: 94px;
+}
+
 .sign-catalog-description {
   color: #333333;
   text-align: center;
+  margin: 0;
+  padding-bottom: 46px;
 }
