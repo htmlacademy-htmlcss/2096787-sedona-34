@@ -25,8 +25,8 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  background-color: #e5e5e5; н
-  color: #000000;
+  background-color: #e5e5e5;
+  н color: #000000;
 }
 
 img {
@@ -162,29 +162,102 @@ img {
 
 .advantages-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  background-color: #82b3d3;
 }
 
 .advantages-item {
   text-align: center;
 }
 
+.item-wrapper {
+  width: 400px;
+  padding-top: 90px;
+}
+
+.item-town {
+  grid-column: 1/-1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title-town,
+.number-town,
+.description-town {
+  color: #ffffff;
+}
+
 .services-list {
   list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.services-item {
+  width: 400px;
+}
+
+.services-item-title {
+  padding-top: 182px;
+}
+
+.services-item-description {
+  padding: 0 85px 81px 85px;
+  margin: 0;
+
+}
+
+.habitation-item {
+  background-color: rgba(131, 179, 211, 0.12);
+  /*почему не меняет цвет? как задать опасити только бекграунду?*/
+}
+
+.food-item {
+  background-color: #ffffff;
+}
+
+.item-bridge {
+  grid-column: 1/-1;
+  display: flex;
+  color: #ffffff;
+}
+
+.img-bridge {
+  order: -1;
+}
+
+.advantages-wrapper {
+  padding-top: 103px;
 }
 
 .advantages-item-title,
 .services-item-title {
   font-size: 24px;
   line-height: 28px;
+  font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 92px;
   margin-bottom: 30px;
+  padding-right: 85px;
+  padding-left: 85px;
 }
 
-.advantages-item-number {
-  margin-bottom: 30px;
+.advantages-item-description {
+  margin: 0;
+  margin-top: 30px;
+  padding: 0 85px 92px 85px;
 }
+
+.advantages-item-description,
+.services-item-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
 
 .order {
   background-color: #ffffff;
