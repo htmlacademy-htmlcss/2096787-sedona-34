@@ -163,7 +163,7 @@ img {
   padding: 0;
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  background-color: #82b3d3;
+
 }
 
 .advantages-item {
@@ -173,12 +173,14 @@ img {
 .item-wrapper {
   width: 400px;
   padding-top: 90px;
+  box-sizing: border-box;
 }
 
 .item-town {
   grid-column: 1/-1;
   display: flex;
   flex-wrap: wrap;
+  background-color: #82b3d3;
 }
 
 .title-town,
@@ -191,6 +193,7 @@ img {
   list-style-type: none;
   display: flex;
   padding: 0;
+  background-color: #ffffff;
 }
 
 .services-item {
@@ -207,9 +210,10 @@ img {
 
 }
 
-.habitation-item {
+.habitation-item,
+.present-item,
+.color-wrapper {
   background-color: rgba(131, 179, 211, 0.12);
-  /*почему не меняет цвет? как задать опасити только бекграунду?*/
 }
 
 .food-item {
@@ -220,6 +224,7 @@ img {
   grid-column: 1/-1;
   display: flex;
   color: #ffffff;
+  background-color: #82b3d3;
 }
 
 .img-bridge {
@@ -566,6 +571,7 @@ img {
   max-width: 100%;
   height: auto;
   grid-column: 1/-1;
+  object-fit: cover;
 }
 
 .hotel-description,
@@ -604,8 +610,8 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
-  border-color: #82b3d3;
-} /*что за тень у кнопки этой? это какой-то по умолчанию параметр? не могу в отладчике найти*/
+  border: none;
+}
 
 .button-selected {
   background-color: #7db54f;
