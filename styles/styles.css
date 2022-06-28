@@ -74,6 +74,10 @@ img {
   display: flex;
 }
 
+.header-logo {
+  position: relative;
+}
+
 .navigation-list {
   margin: 0;
   padding: 0;
@@ -101,7 +105,7 @@ img {
 
 .user-item {
   min-width: 42px;
-  min-height: 66px;
+  min-height: 63px;
   border: red 1px solid;
 }
 
@@ -114,6 +118,10 @@ img {
   display: block;
   padding: 9px 15px;
   align-self: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .header-button {
@@ -121,6 +129,10 @@ img {
   border-radius: 4px;
   margin-left: auto;
   padding-top: 14px;
+}
+
+.main-index {
+  margin-top: -5px;
 }
 
 .main-index-header {
@@ -401,6 +413,10 @@ img {
 }
 
 /*styles catalog*/
+
+.main-container {
+  margin-top: -5px;
+}
 
 .main-top {
   background-image: url(../images/background-catalog.png);
@@ -684,6 +700,10 @@ img {
   margin-top: 50px;
 }
 
+.hotel-quantity {
+  width: 160px;
+  padding: 14px 20px 14px 20px;
+}
 
 .sign-catalog {
   background-color: #ffffff;
