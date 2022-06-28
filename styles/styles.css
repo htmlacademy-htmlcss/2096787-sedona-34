@@ -163,17 +163,18 @@ img {
   padding: 0;
   display: grid;
   grid-template-columns: 400px 400px 400px;
-
 }
 
 .advantages-item {
   text-align: center;
+  padding: 102px 85px;
 }
 
 .item-wrapper {
   width: 400px;
-  padding-top: 90px;
+  padding: 89px 85px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .item-town {
@@ -198,6 +199,7 @@ img {
 
 .services-item {
   width: 400px;
+  text-align: center;
 }
 
 .services-item-title {
@@ -207,7 +209,6 @@ img {
 .services-item-description {
   padding: 0 85px 81px 85px;
   margin: 0;
-
 }
 
 .habitation-item,
@@ -243,14 +244,11 @@ img {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 30px;
-  padding-right: 85px;
-  padding-left: 85px;
 }
 
 .advantages-item-description {
   margin: 0;
   margin-top: 30px;
-  padding: 0 85px 92px 85px;
 }
 
 .advantages-item-description,
@@ -415,7 +413,8 @@ img {
 .main-header-title {
   font-size: 60px;
   line-height: 78px;
-  margin: 35px 0 10px;
+  margin: 0;
+  padding: 35px 0 10px;
 }
 
 .breadcrubs {
