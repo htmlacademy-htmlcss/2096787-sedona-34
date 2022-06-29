@@ -106,8 +106,23 @@ img {
 .user-item {
   min-width: 42px;
   min-height: 63px;
-  border: red 1px solid;
 }
+
+.user-link {
+  position: relative;
+  display: block;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: #000000; /*почему они наполовину ушли наверх?*/
+}
+
 
 .user-button {
   background-color: #756157;
@@ -141,6 +156,13 @@ img {
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: 485px;
+}
+
+.main-img::before {
+  content: "";
+  background: url(../images/broken-line.svg);
+  background-position: bottom;
+ /*почему не появляется элемент? Что я не так делаю?*/
 }
 
 .main-title {
@@ -221,6 +243,12 @@ img {
 .services-item-description {
   padding: 0 85px 81px 85px;
   margin: 0;
+}
+
+.habitation-item::before {
+  content: " ";
+  background: url(..//images/habitation.svg);
+  background-repeat: no-repeat;
 }
 
 .habitation-item,
@@ -330,7 +358,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding-top: 94px;
+  padding-top: 92px;
 }
 
 .sign-description {
@@ -393,9 +421,21 @@ img {
 }
 
 .social-list-item {
-  border: red 1px solid;
   width: 47px;
   height: 40px;
+}
+
+.social-link {
+  position: relative;
+}
+
+.social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .contact-number {
