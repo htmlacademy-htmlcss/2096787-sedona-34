@@ -115,10 +115,10 @@ img {
 
 .navigation-icon {
   position: absolute;
-  top: 0;
+  top: 23px;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 11px;
   margin: 0 auto;
   color: #000000;
   /*почему они не центруются????*/
@@ -247,6 +247,10 @@ img {
   margin: 0;
 }
 
+.services-item-title {
+  padding-top: 110px;
+}
+
 .habitation-item,
 .present-item,
 .color-wrapper {
@@ -259,6 +263,9 @@ img {
   width: 75px;
   height: 72px;
   background-image: url(../images/habitation.svg);
+  position: relative;
+  top: 80px; /*как высчитывать размеры?*/
+  left: 163px;
 }
 
 .food-item {
@@ -271,6 +278,9 @@ img {
   width: 74px;
   height: 70px;
   background-image: url(../images/food.svg);
+  position: relative;
+  top: 80px;
+  left: 163px;
 }
 
 .present-item::before {
@@ -279,6 +289,9 @@ img {
   width: 64px;
   height: 76px;
   background-image: url(../images/present.svg);
+  position: relative;
+  top: 80px;
+  left: 163px;
 }
 
 .item-bridge {
@@ -458,6 +471,10 @@ img {
   margin: auto;
 }
 
+.social-link:hover {
+  color: #68a2ca;
+}
+
 .contact-number {
   font-size: 40px;
   line-height: 40px;
@@ -591,7 +608,6 @@ img {
 .sorting-container {
   display: flex;
   width: 160px;
-  border: red 1px solid;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -602,8 +618,19 @@ img {
 .sorting-item {
   width: 48px;
   height: 48px;
-  border: green 1px solid;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
   margin-right: 8px;
+}
+
+.sorting-img {
+  position: relative;
+  top: 10px;
+  left: 14px;
+}
+
+.sorting-item-current {
+  border: 2px solid #000000;
 }
 
 .sorting-item:last-child {
