@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box; /*удалить по коду ниже*/
+}
+
 html {
   height: 100%;
 }
@@ -106,30 +110,23 @@ img {
 .user-item {
   min-width: 42px;
   min-height: 63px;
+  display: flex;
+  align-items: center;
 }
 
 .user-link {
   position: relative;
-  display: block;
+  display: flex;
 }
 
 .navigation-icon {
-  position: absolute;
-  top: 23px;
-  right: 0;
-  bottom: 0;
-  left: 11px;
-  margin: 0 auto;
   color: #000000;
-  /*почему они не центруются????*/
 }
 
 
 .user-button {
   background-color: #756157;
   text-decoration: none;
-  text-transform: capitalize;
-  color: #000000;
   text-align: center;
   display: block;
   padding: 9px 15px;
@@ -152,23 +149,12 @@ img {
 }
 
 .main-index-header {
-  background-image: url(../images/index-background.jpg);
+  background-image: url(../images/broken-line.svg), url(../images/index-background.jpg);
+  background-position: bottom, center;
   background-color: #4682b4;
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: 485px;
-  position: relative;
-}
-
-.main-index-header::before {
-  content: "";
-  display: block;
-  background-image: url(../images/broken-line.svg);
-  width: 1200px;
-  height: 57px;
-  position: absolute;
-  bottom: 0;
- /*псевдоэлемент гребенку я установила, но при этом хвостик логотипа хедера ушел под картинку гор. понимаю, что это связано с соотношением position relative/absolute у этих блоков, но как исправить не понимаю. HELPPPPP!!!!!*/
 }
 
 .main-title {
@@ -240,15 +226,20 @@ img {
 .services-item {
   width: 400px;
   text-align: center;
-}
-
-.services-item-description {
-  padding: 0 85px 81px 85px;
-  margin: 0;
+  padding: 80px 85px;
 }
 
 .services-item-title {
-  padding-top: 110px;
+  margin-top: 30px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.services-item-description {
+  margin: 0;
 }
 
 .habitation-item,
@@ -263,9 +254,8 @@ img {
   width: 75px;
   height: 72px;
   background-image: url(../images/habitation.svg);
-  position: relative;
-  top: 80px; /*как высчитывать размеры?*/
-  left: 163px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .food-item {
@@ -278,9 +268,8 @@ img {
   width: 74px;
   height: 70px;
   background-image: url(../images/food.svg);
-  position: relative;
-  top: 80px;
-  left: 163px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .present-item::before {
@@ -289,9 +278,8 @@ img {
   width: 64px;
   height: 76px;
   background-image: url(../images/present.svg);
-  position: relative;
-  top: 80px;
-  left: 163px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .item-bridge {
@@ -309,8 +297,7 @@ img {
   padding-top: 103px;
 }
 
-.advantages-item-title,
-.services-item-title {
+.advantages-item-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -469,10 +456,13 @@ img {
   bottom: 0;
   left: 0;
   margin: auto;
+  color: #83b3d3;
 }
 
-.social-link:hover {
-  color: #68a2ca;
+
+
+.social-link:active {
+  opacity: 0.3;
 }
 
 .contact-number {
@@ -487,7 +477,56 @@ img {
 
 .footer-link {
   margin-left: auto;
+  color: #000000;
 }
+
+.link-logo {
+  color: #000000;
+}
+
+/*состояния*/
+
+.user-button:hover,
+.user-button:focus,
+.order-button:hover,
+.order-button:focus,
+.hotel-detail-link:hover,
+.hotel-detail-link:focus {
+  background-color: #615048;
+}
+
+.user-button:active,
+.order-button:active,
+.hotel-detail-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.user-button:disabled,
+.order-button:disabled,
+.hotel-detail-link:disabled {
+  background-color: #e5e5e5;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: #68a2ca;
+}
+
+.contact-number:hover,
+.contact-number:focus,
+.footer-link:hover,
+.footer-link:focus {
+  color: #756157;
+}
+
+.contact-number:active {
+  opacity: 0.3;
+}
+
+.footer-link:active {
+  opacity: 0.3;
+}
+
 
 /*styles catalog*/
 
@@ -518,7 +557,6 @@ img {
 }
 
 .link-index {
-  border: red 1px solid;
   width: 21px;
   height: 21px;
 }
@@ -567,10 +605,13 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+  padding: 14px 14px;
+  border: none;
+  margin-bottom: 20px;
 }
 
 .button-reset {
-  font-size: 16px;
+  font-size: 16px; /*почему стили бади перебивают размер шрифта у этой кнопки?*/
   line-height: 20px;
   border: none;
   font: inherit;
@@ -720,6 +761,14 @@ img {
   border-color: #7db54f;
 }
 
+.four-stars-hotel {
+  width: 90px;
+  background-image: url(..//images/star.svg);
+  background-repeat: repeat-x;
+  background-position: center;
+  /*и их получилось пять. порылась в интеренете, но, может, не так спрашиваю, ответа, как задать отступ внутри бекграунд-репит, не нашла*/
+}
+
 .hotel-rating {
   width: 140px;
   background-color: #f2f2f2;
@@ -790,6 +839,7 @@ img {
 .hotel-quantity {
   width: 160px;
   padding: 14px 20px 14px 20px;
+  margin-left: 51px;
 }
 
 .sign-catalog {
