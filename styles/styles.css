@@ -119,8 +119,9 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto;
-  color: #000000; /*почему они наполовину ушли наверх?*/
+  margin: 0 auto;
+  color: #000000;
+  /*почему они не центруются????*/
 }
 
 
@@ -156,13 +157,18 @@ img {
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: 485px;
+  position: relative;
 }
 
-.main-img::before {
+.main-index-header::before {
   content: "";
-  background: url(../images/broken-line.svg);
-  background-position: bottom;
- /*почему не появляется элемент? Что я не так делаю?*/
+  display: block;
+  background-image: url(../images/broken-line.svg);
+  width: 1200px;
+  height: 57px;
+  position: absolute;
+  bottom: 0;
+ /*псевдоэлемент гребенку я установила, но при этом хвостик логотипа хедера ушел под картинку гор. понимаю, что это связано с соотношением position relative/absolute у этих блоков, но как исправить не понимаю. HELPPPPP!!!!!*/
 }
 
 .main-title {
@@ -236,19 +242,9 @@ img {
   text-align: center;
 }
 
-.services-item-title {
-  padding-top: 182px;
-}
-
 .services-item-description {
   padding: 0 85px 81px 85px;
   margin: 0;
-}
-
-.habitation-item::before {
-  content: " ";
-  background: url(..//images/habitation.svg);
-  background-repeat: no-repeat;
 }
 
 .habitation-item,
@@ -257,8 +253,32 @@ img {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.habitation-item::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  background-image: url(../images/habitation.svg);
+}
+
 .food-item {
   background-color: #ffffff;
+}
+
+.food-item::before {
+  content: "";
+  display: block;
+  width: 74px;
+  height: 70px;
+  background-image: url(../images/food.svg);
+}
+
+.present-item::before {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 76px;
+  background-image: url(../images/present.svg);
 }
 
 .item-bridge {
