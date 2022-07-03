@@ -135,25 +135,35 @@ img {
   display: flex;
 }
 
-.user-link-selected::before {
-  content: "12";
-  display: block;
-  width: 20px;
-  height: 20px;
+.count-sign {
+  position: absolute;
   background-color: #7db54f;
   color: #ffffff;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
   border-radius: 50px;
-  text-align: center;
   letter-spacing: -0.1em;
+  padding: 3px 5px;
+  margin-top: -13px;
+  margin-left: 11px;
+}
+
+/* .user-link-selected::before {
+  content: "12";
+  display: block;
+  width: 20px;
+  height: 20px;
+
+
+  text-align: center;
+
   text-decoration: none;
   position: absolute;
   top: -9px;
   left: 13px;
 
-}
+} */
 
 .navigation-icon {
   color: #000000;
@@ -437,12 +447,16 @@ img {
 
 .sign-field {
   width: 600px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 21px;
   background-color: #f2f2f2;
   border: #f2f2f2 1px solid;
   border-radius: 10px 0 0 10px;
   padding-left: 22px;
   padding-top: 20px;
   padding-bottom: 19px;
+  cursor: pointer;
 }
 
 .sign-button {
