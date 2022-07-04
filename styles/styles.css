@@ -1039,7 +1039,7 @@ img {
   margin: 0;
   display: grid;
   grid-template-columns: 119px 420px;
-  column-gap: 42px;
+  column-gap: 36px;
 }
 
 .modal-text {
