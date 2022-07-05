@@ -14,6 +14,11 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+  /*удалить по коду ниже*/
+}
+
 html {
   height: 100%;
 }
@@ -74,6 +79,14 @@ img {
   display: flex;
 }
 
+.navigation-item {
+  position: relative;
+}
+
+.header-logo {
+  position: relative;
+}
+
 .navigation-list {
   margin: 0;
   padding: 0;
@@ -96,24 +109,62 @@ img {
   color: #000000;
   text-align: center;
   display: block;
-  padding: 20px 34px;
+  padding: 20px 17px;
+}
+
+.navigation-link-current::before {
+  content: "";
+  height: 2px;
+  background-color: #756257;
+  position: absolute;
+  right: 20px;
+  bottom: 4px;
+  left: 20px;
 }
 
 .user-item {
   min-width: 42px;
-  min-height: 66px;
-  border: red 1px solid;
+  min-height: 63px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.user-link {
+  position: relative;
+  display: flex;
+}
+
+.count-sign {
+  position: absolute;
+  background-color: #7db54f;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  border-radius: 50px;
+  letter-spacing: -0.1em;
+  padding: 3px 5px;
+  margin-top: -13px;
+  margin-left: 11px;
+}
+
+
+.navigation-icon {
+  color: #000000;
 }
 
 .user-button {
   background-color: #756157;
   text-decoration: none;
-  text-transform: capitalize;
-  color: #000000;
   text-align: center;
   display: block;
   padding: 9px 15px;
   align-self: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .header-button {
@@ -123,8 +174,13 @@ img {
   padding-top: 14px;
 }
 
+.main-index {
+  margin-top: -5px;
+}
+
 .main-index-header {
-  background-image: url(../images/index-background.jpg);
+  background-image: url(../images/broken-line.svg), url(../images/index-background.jpg);
+  background-position: bottom, center;
   background-color: #4682b4;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -163,17 +219,18 @@ img {
   padding: 0;
   display: grid;
   grid-template-columns: 400px 400px 400px;
-
 }
 
 .advantages-item {
   text-align: center;
+  padding: 102px 85px;
 }
 
 .item-wrapper {
   width: 400px;
-  padding-top: 90px;
+  padding: 89px 85px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .item-town {
@@ -198,16 +255,21 @@ img {
 
 .services-item {
   width: 400px;
+  text-align: center;
+  padding: 80px 85px;
 }
 
 .services-item-title {
-  padding-top: 182px;
+  margin-top: 30px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .services-item-description {
-  padding: 0 85px 81px 85px;
   margin: 0;
-
 }
 
 .habitation-item,
@@ -216,8 +278,38 @@ img {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.habitation-item::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  background-image: url(../images/habitation.svg);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .food-item {
   background-color: #ffffff;
+}
+
+.food-item::before {
+  content: "";
+  display: block;
+  width: 74px;
+  height: 70px;
+  background-image: url(../images/food.svg);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.present-item::before {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 76px;
+  background-image: url(../images/present.svg);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .item-bridge {
@@ -235,22 +327,18 @@ img {
   padding-top: 103px;
 }
 
-.advantages-item-title,
-.services-item-title {
+.advantages-item-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 30px;
-  padding-right: 85px;
-  padding-left: 85px;
 }
 
 .advantages-item-description {
   margin: 0;
   margin-top: 30px;
-  padding: 0 85px 92px 85px;
 }
 
 .advantages-item-description,
@@ -320,7 +408,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding-top: 94px;
+  padding-top: 92px;
 }
 
 .sign-description {
@@ -343,12 +431,16 @@ img {
 
 .sign-field {
   width: 600px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 21px;
   background-color: #f2f2f2;
   border: #f2f2f2 1px solid;
   border-radius: 10px 0 0 10px;
   padding-left: 22px;
   padding-top: 20px;
   padding-bottom: 19px;
+  cursor: pointer;
 }
 
 .sign-button {
@@ -383,9 +475,22 @@ img {
 }
 
 .social-list-item {
-  border: red 1px solid;
   width: 47px;
   height: 40px;
+}
+
+.social-link {
+  position: relative;
+}
+
+.social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: #83b3d3;
 }
 
 .contact-number {
@@ -400,9 +505,124 @@ img {
 
 .footer-link {
   margin-left: auto;
+  color: #000000;
 }
 
+.link-logo {
+  color: #000000;
+}
+
+/*состояния*/
+
+.user-button:hover,
+.user-button:focus,
+.order-button:hover,
+.order-button:focus,
+.hotel-detail-link:hover,
+.hotel-detail-link:focus {
+  background-color: #615048;
+}
+
+.user-button:active,
+.order-button:active,
+.hotel-detail-link:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.user-button:disabled,
+.order-button:disabled,
+.hotel-detail-link:disabled {
+  background-color: #e5e5e5;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: #68a2ca;
+}
+
+.social-link:active {
+  opacity: 0.3;
+}
+
+.contact-number:hover,
+.contact-number:focus,
+.footer-link:hover .link-logo,
+.footer-link:focus .link-logo {
+  color: #756157;
+}
+
+.contact-number:active,
+.footer-link:active {
+  opacity: 0.3;
+}
+
+.sign-button:hover,
+.sign-button:focus,
+.button-submit:hover,
+.button-submit:focus,
+.select-button:hover,
+.select-button:focus {
+  background-color: #68a2ca;
+}
+
+.sign-button:active,
+.button-submit:active,
+.select-button:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.sign-button:disabled,
+.button-submit:disabled,
+.select-button:disabled {
+  background-color: #e5e5e5;
+}
+
+.button-selected:hover,
+.button-selected:focus {
+  background-color: #6c9e42;
+}
+
+.button-selected:active {
+  background-color: #7db54f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-selected:disabled {
+  background-color: #e5e5e5;
+}
+
+.sorting-button:hover {
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.sorting_button:focus {
+  border: 2px solid #68A2CA;
+  border-radius: 4px;
+}
+
+.sorting-button:active {
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.pagination-link:hover,
+.pagination-link:focus {
+  background-color: #68a2cA;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 /*styles catalog*/
+
+.main-container {
+  margin-top: -5px;
+}
 
 .main-top {
   background-image: url(../images/background-catalog.png);
@@ -415,7 +635,8 @@ img {
 .main-header-title {
   font-size: 60px;
   line-height: 78px;
-  margin: 35px 0 10px;
+  margin: 0;
+  padding: 35px 0 10px;
 }
 
 .breadcrubs {
@@ -426,7 +647,6 @@ img {
 }
 
 .link-index {
-  border: red 1px solid;
   width: 21px;
   height: 21px;
 }
@@ -435,11 +655,28 @@ img {
   font-size: 16px;
   line-height: 21px;
   margin-right: 25px;
+  position: relative;
 }
 
 .breadcrubs-link {
   text-decoration: none;
   color: #ffffff;
+}
+
+.breadcrubs-item::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 11px;
+  background-image: url(..//images/arrow-right.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 7px;
+  right: -13px;
+}
+
+.breadcrubs-item:last-child::after {
+  content: none;
 }
 
 .catalog-filter {
@@ -475,10 +712,14 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+  padding: 14px 14px;
+  border: none;
+  margin-bottom: 20px;
 }
 
 .button-reset {
   font-size: 16px;
+  /*почему стили бади перебивают размер шрифта у этой кнопки?*/
   line-height: 20px;
   border: none;
   font: inherit;
@@ -516,7 +757,6 @@ img {
 .sorting-container {
   display: flex;
   width: 160px;
-  border: red 1px solid;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -527,8 +767,19 @@ img {
 .sorting-item {
   width: 48px;
   height: 48px;
-  border: green 1px solid;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
   margin-right: 8px;
+}
+
+.sorting-img {
+  position: relative;
+  top: 10px;
+  left: 14px;
+}
+
+.sorting-item-current {
+  border: 2px solid #000000;
 }
 
 .sorting-item:last-child {
@@ -618,6 +869,14 @@ img {
   border-color: #7db54f;
 }
 
+.four-stars-hotel {
+  width: 90px;
+  background-image: url(..//images/star.svg);
+  background-repeat: repeat-x;
+  background-position: center;
+  /*и их получилось пять. порылась в интеренете, но, может, не так спрашиваю, ответа, как задать отступ внутри бекграунд-репит, не нашла*/
+}
+
 .hotel-rating {
   width: 140px;
   background-color: #f2f2f2;
@@ -685,6 +944,11 @@ img {
   margin-top: 50px;
 }
 
+.hotel-quantity {
+  width: 160px;
+  padding: 14px 20px 14px 20px;
+  margin-left: 51px;
+}
 
 .sign-catalog {
   background-color: #ffffff;
@@ -705,4 +969,121 @@ img {
   text-align: center;
   margin: 0;
   padding-bottom: 46px;
+}
+
+/*стили модального окна*/
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  ;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 70px;
+  background-color: #ffffff;
+}
+
+.modal-search {
+  width: 715px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 54px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  border: none;
+  background-image: url(..//images/close-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+  /*почему фокус черной обводкой? */
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 63px;
+}
+
+.modal-field-group {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 119px 420px;
+  column-gap: 36px;
+}
+
+.modal-text {
+  grid-column: 2/3;
+}
+
+.modal-field-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.modal-field-date {
+  padding: 15px 19px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  border: none;
+}
+
+.modal-field-group:not(last-child) {
+  margin-bottom: 11px;
+}
+
+.date-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  margin-right: 17px;
+  margin-top: 18px;
+  padding: 0;
+  background-image: url(..//images/calender.svg);
+  border: none;
+  cursor: pointer;
+}
+
+.modal-text {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.text-error {
+  color: #ff5757;
 }
