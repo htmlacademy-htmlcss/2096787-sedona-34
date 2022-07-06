@@ -1010,19 +1010,7 @@ img {
   cursor: pointer;
 }
 
-.modal-close-button:hover {
-  background-color: #E6E6E6;
-}
 
-.modal-close-button:focus {
-  background-color: #E6E6E6;
-  border: 3px solid #83B3D3;
-  /*почему фокус черной обводкой? */
-}
-
-.modal-close-button:active {
-  opacity: 0.3;
-}
 
 .modal-title {
   font-weight: 700;
@@ -1077,6 +1065,7 @@ img {
   background-image: url(..//images/calender.svg);
   border: none;
   cursor: pointer;
+  opacity: 0.3;
 }
 
 .modal-text {
@@ -1224,18 +1213,19 @@ input::-webkit-inner-spin-button {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  /* display: none; */ /*чтоб работало при наведении*/
+  /* display: none; */
+  /*чтоб работало при наведении*/
 }
 
 .tooltip-text::before {
-  content:"";
+  content: "";
   background-image: url("../images/tooltip-arrow.svg");
   width: 14px;
   height: 6px;
-  position:absolute;
+  position: absolute;
   bottom: 100%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1253,3 +1243,55 @@ input::-webkit-inner-spin-button {
 } */
 
 /*стили состояний в поповере*/
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  border: 3px solid #83b3d3;
+  outline: none;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-field-date:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-field-date:focus {
+  background-color: #e6e6e6;
+  border: 3px solid #83b3d3;
+  outline: none;
+}
+
+.modal-field-date:active {
+  background-color: #ffffff;
+  border: 2px solid #000000
+}
+
+.button-less:hover .button-less::before {
+  opacity: 0;
+}
+
+.button-less:focus .button-less::before {
+  border: 3px solid #83B3D3;
+  border-radius: 4px; /*я неправильно пишу селектор? или что не так делаю?*/
+}
+
+.search-button:hover {
+  background-color: #68a2ca;
+}
+
+.search-button:focus {
+  background-color: #68a2ca;
+  border: 3px solid #756257;
+}
+
+.search-button:active {
+  background-color: #68a2ca;
+  color: rgb(255, 255, 255, 0.3);;
+}
